@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="number" name="bil1" id="bil1">
+<input type="number" name="bil2" id="bil2">
+<input type="number" name="bil3" id="bil3">
+<input type="number" name="bil4" id="bil4">
+<input type="number" name="bil5" id="bil5">
+<input type="button" value="Hasil" id="btnHasil">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    //menambahkan button tambah
+    $("#btnHasil").on("click",function(
+        
+    ){
+    let bil1 = $("#bil1").val(); //menginput bilangan 1
+    let bil2 = $("#bil2").val(); //menginput bilangan 2
+    let bil3 = $("#bil3").val(); //menginput bilangan 3
+    let bil4 = $("#bil4").val(); //menginput bilangan 4
+    let bil5 = $("#bil5").val(); //menginput bilangan 5
+    let hasil = parseInt(bil1)+parseInt(bil2)/parseInt(bil3)*parseInt(bil4)-parseInt(bil5); //hasil dari input bilangan 1 dan 2
+
+    alert("hasil " + hasil); //menampilkan notif dari hasil bilangan
+    });
+</script>
+</body>
+</html>
